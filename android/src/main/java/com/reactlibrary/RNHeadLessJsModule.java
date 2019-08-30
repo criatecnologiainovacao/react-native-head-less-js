@@ -60,7 +60,7 @@ public class RNHeadLessJsModule extends ReactContextBaseJavaModule {
   private void createNotificationChannel() {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       int importance = NotificationManager.IMPORTANCE_LOW;
-      NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "", importance);
+      NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "Notificações", importance);
       NotificationManager notificationManager = this.reactContext.getSystemService(NotificationManager.class);
       notificationManager.createNotificationChannel(channel);
     }
